@@ -77,7 +77,7 @@ namespace Covid19
             this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTextBox.FocusedBaseColor = System.Drawing.Color.White;
             this.PasswordTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.PasswordTextBox.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTextBox.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTextBox.Location = new System.Drawing.Point(45, 122);
@@ -85,9 +85,11 @@ namespace Covid19
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Radius = 7;
-            this.PasswordTextBox.Size = new System.Drawing.Size(220, 50);
+            this.PasswordTextBox.Size = new System.Drawing.Size(220, 52);
             this.PasswordTextBox.TabIndex = 8;
             this.PasswordTextBox.Text = "Пароль";
+            this.PasswordTextBox.Click += new System.EventHandler(this.PasswordTextBox_Click);
+            this.PasswordTextBox.Enter += new System.EventHandler(this.PasswordTextBox_Click);
             // 
             // gunaButton1
             // 
@@ -128,7 +130,7 @@ namespace Covid19
             this.LoginTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LoginTextBox.FocusedBaseColor = System.Drawing.Color.White;
             this.LoginTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.LoginTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.LoginTextBox.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LoginTextBox.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.LoginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LoginTextBox.Location = new System.Drawing.Point(45, 64);
@@ -136,9 +138,11 @@ namespace Covid19
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.PasswordChar = '\0';
             this.LoginTextBox.Radius = 7;
-            this.LoginTextBox.Size = new System.Drawing.Size(220, 50);
+            this.LoginTextBox.Size = new System.Drawing.Size(220, 52);
             this.LoginTextBox.TabIndex = 7;
             this.LoginTextBox.Text = "Логин";
+            this.LoginTextBox.Click += new System.EventHandler(this.LoginTextBox_Click);
+            this.LoginTextBox.Enter += new System.EventHandler(this.LoginTextBox_Click);
             // 
             // label2
             // 
@@ -216,6 +220,7 @@ namespace Covid19
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

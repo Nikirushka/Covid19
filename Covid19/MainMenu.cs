@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,14 @@ namespace Covid19
 {
     public partial class MainMenu : Form
     {
+        SqlConnection connection = null;
+        SqlDataReader reader = null;
+        SqlCommand cmd;
+        DataSet ds;
+        SqlDataAdapter adapter;
+
+        string connectionString = @"Server=tcp:covidtestik19.database.windows.net,1433;Initial Catalog=Covid19;Persist Security Info=False;User ID=Liza;Password=LiLit_01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         int UserId;
         public MainMenu()
         {
@@ -22,6 +31,7 @@ namespace Covid19
         {
             InitializeComponent();
             UserId=uid;
+            GetName();
         }
         private String DayBelarusCovid()
         {
@@ -53,10 +63,36 @@ namespace Covid19
             label9.Hide();
             label10.Hide();
             label11.Hide();
-
+            label12.Hide();
+            label13.Hide();
+            GetName();
             label1.Text = "Беларусь за день : "+ DayBelarusCovid();
            label2.Text = "Беларусь все время : " + AllBelarusCovid();
            label5.Text = "Весь мир все время : " + AllWorldCovid();
+        }
+
+        private void GetName()
+        {
+            try
+            {
+                string query = $"select Surname,Name from [User] where id={UserId}";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    cmd = new SqlCommand(query, connection);
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        label3.Text = $"{reader.GetString(0)} {reader.GetString(1)}";
+                    }
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void gunaLabel3_Click(object sender, EventArgs e)
@@ -89,7 +125,11 @@ namespace Covid19
 
         private void gunaGradientButton1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Map map = new Map();
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = map.ShowDialog();
+            this.Show();
         }
 
         private void gunaGradientButton3_Click(object sender, EventArgs e)
@@ -129,13 +169,13 @@ namespace Covid19
 
         private void PlaneButton_MouseEnter(object sender, EventArgs e)
         {
-            PlaneButton.BackgroundImage = Properties.Resources.Plane_on;
+            PlaneButton.BackgroundImage = Properties.Resources.Diary_on;
             label11.Show();
         }
 
         private void PlaneButton_MouseLeave(object sender, EventArgs e)
         {
-            PlaneButton.BackgroundImage = Properties.Resources.Plane;
+            PlaneButton.BackgroundImage = Properties.Resources.Diary;
             label11.Hide();
         }
 
@@ -191,6 +231,53 @@ namespace Covid19
             Test test = new Test();
             DialogResult dialogResult = new DialogResult();
             dialogResult = test.ShowDialog();
+            this.Show();
+        }
+
+        private void PlaneButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaGradientButton2_MouseEnter(object sender, EventArgs e)
+        {
+           gunaGradientButton2.BackgroundImage = Properties.Resources.Help_on;
+            label12.Show();
+        }
+
+        private void gunaGradientButton2_MouseLeave(object sender, EventArgs e)
+        {
+            gunaGradientButton2.BackgroundImage = Properties.Resources.Help;
+            label12.Hide();
+        }
+
+        private void gunaGradientButton1_MouseLeave(object sender, EventArgs e)
+        {
+            gunaGradientButton1.BackgroundImage = Properties.Resources.Info;
+            label13.Hide();
+        }
+
+        private void gunaGradientButton1_MouseEnter(object sender, EventArgs e)
+        {
+            gunaGradientButton1.BackgroundImage = Properties.Resources.Info_on;
+            label13.Show();
+        }
+
+        private void gunaGradientButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Help help = new Help();
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = help.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaGradientButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Info info = new Info();
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = info.ShowDialog();
             this.Show();
         }
     }

@@ -56,13 +56,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.gunaElipse9 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse10 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
+            this.gunaGradientButton2 = new Guna.UI.WinForms.GunaGradientButton();
             this.VaccinationButton = new Guna.UI.WinForms.GunaGradientButton();
             this.SymptomsButton = new Guna.UI.WinForms.GunaGradientButton();
             this.HistoryButton = new Guna.UI.WinForms.GunaGradientButton();
             this.PlaneButton = new Guna.UI.WinForms.GunaGradientButton();
             this.TestButton = new Guna.UI.WinForms.GunaGradientButton();
             this.MapButton = new Guna.UI.WinForms.GunaGradientButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +110,7 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.gunaPanel1.Controls.Add(this.label5);
             this.gunaPanel1.Controls.Add(this.label2);
             this.gunaPanel1.Controls.Add(this.label1);
@@ -112,7 +118,7 @@
             this.gunaPanel1.Location = new System.Drawing.Point(680, 53);
             this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(442, 236);
+            this.gunaPanel1.Size = new System.Drawing.Size(442, 192);
             this.gunaPanel1.TabIndex = 13;
             // 
             // label5
@@ -120,7 +126,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(2, 152);
+            this.label5.Location = new System.Drawing.Point(2, 137);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 33);
@@ -132,7 +138,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2, 97);
+            this.label2.Location = new System.Drawing.Point(2, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 33);
@@ -144,7 +150,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 46);
+            this.label1.Location = new System.Drawing.Point(2, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
@@ -184,20 +190,17 @@
             // 
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.label3.Location = new System.Drawing.Point(1, 540);
+            this.label3.Location = new System.Drawing.Point(1, 534);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(671, 42);
+            this.label3.Size = new System.Drawing.Size(675, 42);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Литвинова Елизавета 35ТП";
+            this.label3.Text = "Фамилия имя клиента";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaDragControl2
             // 
             this.gunaDragControl2.TargetControl = this.label4;
-            // 
-            // gunaDragControl3
-            // 
-            this.gunaDragControl3.TargetControl = this.pictureBox1;
             // 
             // gunaDragControl4
             // 
@@ -227,9 +230,9 @@
             // 
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(32, 256);
+            this.label6.Location = new System.Drawing.Point(12, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 33);
+            this.label6.Size = new System.Drawing.Size(185, 33);
             this.label6.TabIndex = 17;
             this.label6.Text = "История";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -238,9 +241,9 @@
             // 
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(242, 256);
+            this.label7.Location = new System.Drawing.Point(237, 242);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 33);
+            this.label7.Size = new System.Drawing.Size(185, 33);
             this.label7.TabIndex = 17;
             this.label7.Text = "Симптомы";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -249,9 +252,9 @@
             // 
             this.label8.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(454, 256);
+            this.label8.Location = new System.Drawing.Point(454, 242);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(177, 33);
+            this.label8.Size = new System.Drawing.Size(185, 33);
             this.label8.TabIndex = 17;
             this.label8.Text = "Вакцинация";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -260,9 +263,9 @@
             // 
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(32, 507);
+            this.label9.Location = new System.Drawing.Point(12, 487);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 33);
+            this.label9.Size = new System.Drawing.Size(185, 33);
             this.label9.TabIndex = 17;
             this.label9.Text = "Карта";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -271,9 +274,9 @@
             // 
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(242, 507);
+            this.label10.Location = new System.Drawing.Point(237, 487);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(177, 33);
+            this.label10.Size = new System.Drawing.Size(185, 33);
             this.label10.TabIndex = 17;
             this.label10.Text = "Тест";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -282,23 +285,113 @@
             // 
             this.label11.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label11.Location = new System.Drawing.Point(454, 507);
+            this.label11.Location = new System.Drawing.Point(454, 487);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 33);
+            this.label11.Size = new System.Drawing.Size(185, 33);
             this.label11.TabIndex = 17;
-            this.label11.Text = "Путешествия ";
+            this.label11.Text = "Дневник";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // label12
             // 
-            this.pictureBox1.Image = global::Covid19.Properties.Resources.coronavirus;
-            this.pictureBox1.Location = new System.Drawing.Point(680, 293);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(442, 289);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.label12.Location = new System.Drawing.Point(660, 381);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(160, 33);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Справка";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.label13.Location = new System.Drawing.Point(660, 549);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(170, 33);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "О программе\r\n";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // gunaElipse9
+            // 
+            this.gunaElipse9.Radius = 35;
+            this.gunaElipse9.TargetControl = this.gunaGradientButton1;
+            // 
+            // gunaElipse10
+            // 
+            this.gunaElipse10.Radius = 35;
+            this.gunaElipse10.TargetControl = this.gunaGradientButton2;
+            // 
+            // gunaGradientButton1
+            // 
+            this.gunaGradientButton1.Animated = true;
+            this.gunaGradientButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaGradientButton1.AnimationSpeed = 0.03F;
+            this.gunaGradientButton1.BackgroundImage = global::Covid19.Properties.Resources.Info;
+            this.gunaGradientButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientButton1.BaseColor1 = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.BaseColor2 = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaGradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaGradientButton1.Image = null;
+            this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaGradientButton1.Location = new System.Drawing.Point(680, 417);
+            this.gunaGradientButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaGradientButton1.Name = "gunaGradientButton1";
+            this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.OnHoverImage = null;
+            this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.Size = new System.Drawing.Size(130, 130);
+            this.gunaGradientButton1.TabIndex = 19;
+            this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaGradientButton1.Click += new System.EventHandler(this.gunaGradientButton1_Click_1);
+            this.gunaGradientButton1.MouseEnter += new System.EventHandler(this.gunaGradientButton1_MouseEnter);
+            this.gunaGradientButton1.MouseLeave += new System.EventHandler(this.gunaGradientButton1_MouseLeave);
+            // 
+            // gunaGradientButton2
+            // 
+            this.gunaGradientButton2.Animated = true;
+            this.gunaGradientButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaGradientButton2.AnimationSpeed = 0.03F;
+            this.gunaGradientButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradientButton2.BackgroundImage = global::Covid19.Properties.Resources.Help;
+            this.gunaGradientButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientButton2.BaseColor1 = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.BaseColor2 = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaGradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaGradientButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaGradientButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaGradientButton2.Image = null;
+            this.gunaGradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaGradientButton2.ImageSize = new System.Drawing.Size(50, 50);
+            this.gunaGradientButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gunaGradientButton2.Location = new System.Drawing.Point(680, 249);
+            this.gunaGradientButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaGradientButton2.Name = "gunaGradientButton2";
+            this.gunaGradientButton2.OnHoverBaseColor1 = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.OnHoverBaseColor2 = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.OnHoverImage = null;
+            this.gunaGradientButton2.OnPressedColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton2.Size = new System.Drawing.Size(130, 130);
+            this.gunaGradientButton2.TabIndex = 18;
+            this.gunaGradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaGradientButton2.Click += new System.EventHandler(this.gunaGradientButton2_Click);
+            this.gunaGradientButton2.MouseEnter += new System.EventHandler(this.gunaGradientButton2_MouseEnter);
+            this.gunaGradientButton2.MouseLeave += new System.EventHandler(this.gunaGradientButton2_MouseLeave);
             // 
             // VaccinationButton
             // 
@@ -317,7 +410,7 @@
             this.VaccinationButton.ForeColor = System.Drawing.Color.White;
             this.VaccinationButton.Image = null;
             this.VaccinationButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.VaccinationButton.Location = new System.Drawing.Point(454, 63);
+            this.VaccinationButton.Location = new System.Drawing.Point(454, 53);
             this.VaccinationButton.Margin = new System.Windows.Forms.Padding(2);
             this.VaccinationButton.Name = "VaccinationButton";
             this.VaccinationButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -326,7 +419,7 @@
             this.VaccinationButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.VaccinationButton.OnHoverImage = null;
             this.VaccinationButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.VaccinationButton.Size = new System.Drawing.Size(177, 185);
+            this.VaccinationButton.Size = new System.Drawing.Size(185, 185);
             this.VaccinationButton.TabIndex = 10;
             this.VaccinationButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.VaccinationButton.Click += new System.EventHandler(this.gunaGradientButton6_Click);
@@ -350,7 +443,7 @@
             this.SymptomsButton.ForeColor = System.Drawing.Color.White;
             this.SymptomsButton.Image = null;
             this.SymptomsButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.SymptomsButton.Location = new System.Drawing.Point(242, 63);
+            this.SymptomsButton.Location = new System.Drawing.Point(237, 53);
             this.SymptomsButton.Margin = new System.Windows.Forms.Padding(2);
             this.SymptomsButton.Name = "SymptomsButton";
             this.SymptomsButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -359,7 +452,7 @@
             this.SymptomsButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.SymptomsButton.OnHoverImage = null;
             this.SymptomsButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.SymptomsButton.Size = new System.Drawing.Size(177, 185);
+            this.SymptomsButton.Size = new System.Drawing.Size(185, 185);
             this.SymptomsButton.TabIndex = 9;
             this.SymptomsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SymptomsButton.Click += new System.EventHandler(this.gunaGradientButton5_Click);
@@ -383,7 +476,7 @@
             this.HistoryButton.ForeColor = System.Drawing.Color.White;
             this.HistoryButton.Image = null;
             this.HistoryButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.HistoryButton.Location = new System.Drawing.Point(32, 63);
+            this.HistoryButton.Location = new System.Drawing.Point(12, 53);
             this.HistoryButton.Margin = new System.Windows.Forms.Padding(2);
             this.HistoryButton.Name = "HistoryButton";
             this.HistoryButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -392,7 +485,7 @@
             this.HistoryButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.HistoryButton.OnHoverImage = null;
             this.HistoryButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.HistoryButton.Size = new System.Drawing.Size(177, 185);
+            this.HistoryButton.Size = new System.Drawing.Size(185, 185);
             this.HistoryButton.TabIndex = 8;
             this.HistoryButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HistoryButton.Click += new System.EventHandler(this.gunaGradientButton4_Click);
@@ -405,7 +498,7 @@
             this.PlaneButton.AnimationHoverSpeed = 0.07F;
             this.PlaneButton.AnimationSpeed = 0.03F;
             this.PlaneButton.BackColor = System.Drawing.Color.Transparent;
-            this.PlaneButton.BackgroundImage = global::Covid19.Properties.Resources.Plane;
+            this.PlaneButton.BackgroundImage = global::Covid19.Properties.Resources.Diary;
             this.PlaneButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PlaneButton.BaseColor1 = System.Drawing.Color.Empty;
             this.PlaneButton.BaseColor2 = System.Drawing.Color.Empty;
@@ -419,7 +512,7 @@
             this.PlaneButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.PlaneButton.ImageSize = new System.Drawing.Size(50, 50);
             this.PlaneButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PlaneButton.Location = new System.Drawing.Point(454, 310);
+            this.PlaneButton.Location = new System.Drawing.Point(454, 294);
             this.PlaneButton.Margin = new System.Windows.Forms.Padding(2);
             this.PlaneButton.Name = "PlaneButton";
             this.PlaneButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -428,10 +521,10 @@
             this.PlaneButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.PlaneButton.OnHoverImage = null;
             this.PlaneButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.PlaneButton.Size = new System.Drawing.Size(177, 185);
+            this.PlaneButton.Size = new System.Drawing.Size(185, 185);
             this.PlaneButton.TabIndex = 7;
             this.PlaneButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.PlaneButton.Click += new System.EventHandler(this.gunaGradientButton3_Click);
+            this.PlaneButton.Click += new System.EventHandler(this.PlaneButton_Click);
             this.PlaneButton.MouseEnter += new System.EventHandler(this.PlaneButton_MouseEnter);
             this.PlaneButton.MouseLeave += new System.EventHandler(this.PlaneButton_MouseLeave);
             // 
@@ -454,7 +547,7 @@
             this.TestButton.Image = null;
             this.TestButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TestButton.ImageSize = new System.Drawing.Size(100, 100);
-            this.TestButton.Location = new System.Drawing.Point(242, 310);
+            this.TestButton.Location = new System.Drawing.Point(237, 294);
             this.TestButton.Margin = new System.Windows.Forms.Padding(2);
             this.TestButton.Name = "TestButton";
             this.TestButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -463,7 +556,7 @@
             this.TestButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.TestButton.OnHoverImage = null;
             this.TestButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.TestButton.Size = new System.Drawing.Size(177, 185);
+            this.TestButton.Size = new System.Drawing.Size(185, 185);
             this.TestButton.TabIndex = 6;
             this.TestButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
@@ -488,7 +581,7 @@
             this.MapButton.Image = null;
             this.MapButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MapButton.ImageSize = new System.Drawing.Size(100, 100);
-            this.MapButton.Location = new System.Drawing.Point(32, 310);
+            this.MapButton.Location = new System.Drawing.Point(12, 294);
             this.MapButton.Margin = new System.Windows.Forms.Padding(2);
             this.MapButton.Name = "MapButton";
             this.MapButton.OnHoverBaseColor1 = System.Drawing.Color.Empty;
@@ -497,12 +590,22 @@
             this.MapButton.OnHoverForeColor = System.Drawing.Color.Empty;
             this.MapButton.OnHoverImage = null;
             this.MapButton.OnPressedColor = System.Drawing.Color.Empty;
-            this.MapButton.Size = new System.Drawing.Size(177, 185);
+            this.MapButton.Size = new System.Drawing.Size(185, 185);
             this.MapButton.TabIndex = 5;
             this.MapButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MapButton.Click += new System.EventHandler(this.gunaGradientButton1_Click);
             this.MapButton.MouseEnter += new System.EventHandler(this.MapButton_MouseEnter);
             this.MapButton.MouseLeave += new System.EventHandler(this.MapButton_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Covid19.Properties.Resources.coronavirus;
+            this.pictureBox1.Location = new System.Drawing.Point(815, 249);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(307, 333);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // MainMenu
             // 
@@ -510,6 +613,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(242)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1125, 585);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.gunaGradientButton1);
+            this.Controls.Add(this.gunaGradientButton2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -520,13 +627,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.gunaPanel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.VaccinationButton);
             this.Controls.Add(this.SymptomsButton);
             this.Controls.Add(this.HistoryButton);
             this.Controls.Add(this.PlaneButton);
             this.Controls.Add(this.TestButton);
             this.Controls.Add(this.MapButton);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -545,7 +652,6 @@
         #endregion
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaGradientButton MapButton;
         private Guna.UI.WinForms.GunaGradientButton PlaneButton;
         private Guna.UI.WinForms.GunaGradientButton VaccinationButton;
@@ -577,6 +683,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
+        private Guna.UI.WinForms.GunaGradientButton gunaGradientButton2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse9;
+        private Guna.UI.WinForms.GunaElipse gunaElipse10;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +20,12 @@ namespace Covid19
         DataSet ds;
         SqlDataAdapter adapter;
 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename='|DataDirectory|Corona.mdf';Integrated Security=True";
+        string connectionString = @"Server=tcp:covidtestik19.database.windows.net,1433;Initial Catalog=Covid19;Persist Security Info=False;User ID=Liza;Password=LiLit_01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public Login()
 
         {
             InitializeComponent();
+            SetWebBrowserCompatiblityLevel();
         }
 
         private void EnterButton_Click(object sender, EventArgs e)
@@ -99,8 +101,8 @@ namespace Covid19
                             dialogResult = mainMenu.ShowDialog();
                             this.Show();
                         }
-                        
-                        
+
+
                     }
                 }
             }
@@ -129,5 +131,69 @@ namespace Covid19
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginTextBox_Click(object sender, EventArgs e)
+        {
+            LoginTextBox.Text = "";
+        }
+
+        private void PasswordTextBox_Click(object sender, EventArgs e)
+        {
+            PasswordTextBox.Text = "";
+        }
+        private static void SetWebBrowserCompatiblityLevel()
+        {
+            string appName = Path.GetFileNameWithoutExtension(Application.ExecutablePath);
+            int lvl = 1000 * GetBrowserVersion();
+            bool fixVShost = File.Exists(Path.ChangeExtension(Application.ExecutablePath, ".vshost.exe"));
+
+            WriteCompatiblityLevel("HKEY_LOCAL_MACHINE", appName + ".exe", lvl);
+            if (fixVShost) WriteCompatiblityLevel("HKEY_LOCAL_MACHINE", appName + ".vshost.exe", lvl);
+
+            WriteCompatiblityLevel("HKEY_CURRENT_USER", appName + ".exe", lvl);
+            if (fixVShost) WriteCompatiblityLevel("HKEY_CURRENT_USER", appName + ".vshost.exe", lvl);
+        }
+
+        private static void WriteCompatiblityLevel(string root, string appName, int lvl)
+        {
+            try
+            {
+                Microsoft.Win32.Registry.SetValue(root + @"\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION", appName, lvl);
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        public static int GetBrowserVersion()
+        {
+            string strKeyPath = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer";
+            string[] ls = new string[] { "svcVersion", "svcUpdateVersion", "Version", "W2kVersion" };
+
+            int maxVer = 0;
+            for (int i = 0; i < ls.Length; ++i)
+            {
+                object objVal = Microsoft.Win32.Registry.GetValue(strKeyPath, ls[i], "0");
+                string strVal = Convert.ToString(objVal);
+                if (strVal != null)
+                {
+                    int iPos = strVal.IndexOf('.');
+                    if (iPos > 0)
+                        strVal = strVal.Substring(0, iPos);
+
+                    int res = 0;
+                    if (int.TryParse(strVal, out res))
+                        maxVer = Math.Max(maxVer, res);
+                }
+            }
+
+            return maxVer;
+        }
+
     }
 }

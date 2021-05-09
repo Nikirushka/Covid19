@@ -19,7 +19,7 @@ namespace Covid19
         DataSet ds;
         SqlDataAdapter adapter;
 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename='|DataDirectory|Corona.mdf';Integrated Security=True";
+        string connectionString = @"Server=tcp:covidtestik19.database.windows.net,1433;Initial Catalog=Covid19;Persist Security Info=False;User ID=Liza;Password=LiLit_01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public NewAdmin()
         {
             InitializeComponent();
