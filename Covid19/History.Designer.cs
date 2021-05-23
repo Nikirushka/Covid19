@@ -58,7 +58,7 @@
             this.label4.Location = new System.Drawing.Point(0, -1);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(882, 51);
+            this.label4.Size = new System.Drawing.Size(1114, 51);
             this.label4.TabIndex = 15;
             this.label4.Text = "История Covid19";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,7 +71,7 @@
             this.mainpanel.Controls.Add(this.panel1);
             this.mainpanel.Location = new System.Drawing.Point(8, 53);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(861, 466);
+            this.mainpanel.Size = new System.Drawing.Size(1105, 467);
             this.mainpanel.TabIndex = 16;
             // 
             // panel2
@@ -79,28 +79,26 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(13, 268);
+            this.panel2.Location = new System.Drawing.Point(13, 254);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(819, 324);
+            this.panel2.Size = new System.Drawing.Size(1072, 252);
             this.panel2.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(219, 1);
-            this.label3.MaximumSize = new System.Drawing.Size(600, 0);
+            this.label3.Location = new System.Drawing.Point(238, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(599, 312);
+            this.label3.Size = new System.Drawing.Size(831, 254);
             this.label3.TabIndex = 2;
             this.label3.Text = resources.GetString("label3.Text");
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Covid19.Properties.Resources.Corona2;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 185);
+            this.pictureBox2.Size = new System.Drawing.Size(225, 204);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -121,13 +119,13 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(819, 250);
+            this.panel1.Size = new System.Drawing.Size(1072, 236);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Covid19.Properties.Resources.Corona;
-            this.pictureBox1.Location = new System.Drawing.Point(596, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(858, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(211, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,12 +134,10 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 1);
-            this.label1.MaximumSize = new System.Drawing.Size(600, 0);
+            this.label1.Location = new System.Drawing.Point(27, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(599, 240);
+            this.label1.Size = new System.Drawing.Size(825, 191);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -162,7 +158,7 @@
             this.gunaCircleButton1.Animated = true;
             this.gunaCircleButton1.AnimationHoverSpeed = 0.07F;
             this.gunaCircleButton1.AnimationSpeed = 0.03F;
-            this.gunaCircleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gunaCircleButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.gunaCircleButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -172,7 +168,7 @@
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(242)))), ((int)(((byte)(235)))));
             this.gunaCircleButton1.Image = null;
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(2, 480);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(8, 526);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -194,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(881, 531);
+            this.ClientSize = new System.Drawing.Size(1125, 585);
             this.Controls.Add(this.gunaCircleButton1);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.label4);
@@ -209,7 +205,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

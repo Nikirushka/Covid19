@@ -33,43 +33,37 @@ namespace Covid19
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox4 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gunaCheckBox5 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox6 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.gunaCheckBox7 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox8 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.gunaCheckBox9 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox10 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gunaCheckBox11 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox12 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.gunaCheckBox13 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox14 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.gunaCheckBox15 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox16 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.gunaCheckBox17 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox18 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaCheckBox19 = new Guna.UI.WinForms.GunaCheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.gunaCheckBox20 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox21 = new Guna.UI.WinForms.GunaCheckBox();
-            this.EnterButton = new Guna.UI.WinForms.GunaButton();
-            this.gunaCheckBox22 = new Guna.UI.WinForms.GunaCheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -81,45 +75,6 @@ namespace Covid19
             // 
             this.gunaDragControl2.TargetControl = this;
             // 
-            // gunaCheckBox1
-            // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox1.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(107, 75);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox1.TabIndex = 0;
-            this.gunaCheckBox1.Text = "Да";
-            // 
-            // gunaCheckBox2
-            // 
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox2.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Location = new System.Drawing.Point(209, 75);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox2.TabIndex = 1;
-            this.gunaCheckBox2.Text = "Нет";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(314, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "1.Присутствует ли у вас кашель?";
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -130,426 +85,6 @@ namespace Covid19
             this.label2.TabIndex = 3;
             this.label2.Text = "Тест \"Есть ли у меня Корона?\"";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(471, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(377, 26);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "2.Присутствует ли у вас сухой кашель?";
-            // 
-            // gunaCheckBox3
-            // 
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox3.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Location = new System.Drawing.Point(641, 75);
-            this.gunaCheckBox3.Name = "gunaCheckBox3";
-            this.gunaCheckBox3.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox3.TabIndex = 5;
-            this.gunaCheckBox3.Text = "Нет";
-            // 
-            // gunaCheckBox4
-            // 
-            this.gunaCheckBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox4.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox4.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.Location = new System.Drawing.Point(539, 75);
-            this.gunaCheckBox4.Name = "gunaCheckBox4";
-            this.gunaCheckBox4.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox4.TabIndex = 4;
-            this.gunaCheckBox4.Text = "Да";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(471, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(327, 26);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "4.Присутствует ли у вас насморк?";
-            // 
-            // gunaCheckBox5
-            // 
-            this.gunaCheckBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox5.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox5.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.Location = new System.Drawing.Point(641, 138);
-            this.gunaCheckBox5.Name = "gunaCheckBox5";
-            this.gunaCheckBox5.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox5.TabIndex = 11;
-            this.gunaCheckBox5.Text = "Нет";
-            // 
-            // gunaCheckBox6
-            // 
-            this.gunaCheckBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox6.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox6.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.Location = new System.Drawing.Point(539, 138);
-            this.gunaCheckBox6.Name = "gunaCheckBox6";
-            this.gunaCheckBox6.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox6.TabIndex = 10;
-            this.gunaCheckBox6.Text = "Да";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(39, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(384, 26);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "3.Присутствует ли у вас головная боль?";
-            // 
-            // gunaCheckBox7
-            // 
-            this.gunaCheckBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox7.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox7.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.Location = new System.Drawing.Point(209, 138);
-            this.gunaCheckBox7.Name = "gunaCheckBox7";
-            this.gunaCheckBox7.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox7.TabIndex = 8;
-            this.gunaCheckBox7.Text = "Нет";
-            // 
-            // gunaCheckBox8
-            // 
-            this.gunaCheckBox8.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox8.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox8.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox8.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox8.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox8.Location = new System.Drawing.Point(107, 138);
-            this.gunaCheckBox8.Name = "gunaCheckBox8";
-            this.gunaCheckBox8.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox8.TabIndex = 7;
-            this.gunaCheckBox8.Text = "Да";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(471, 235);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(455, 26);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "8.Стабильно ли держится высокая температура?";
-            // 
-            // gunaCheckBox9
-            // 
-            this.gunaCheckBox9.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox9.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox9.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox9.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox9.Location = new System.Drawing.Point(641, 264);
-            this.gunaCheckBox9.Name = "gunaCheckBox9";
-            this.gunaCheckBox9.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox9.TabIndex = 23;
-            this.gunaCheckBox9.Text = "Нет";
-            // 
-            // gunaCheckBox10
-            // 
-            this.gunaCheckBox10.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox10.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox10.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox10.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox10.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox10.Location = new System.Drawing.Point(539, 264);
-            this.gunaCheckBox10.Name = "gunaCheckBox10";
-            this.gunaCheckBox10.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox10.TabIndex = 22;
-            this.gunaCheckBox10.Text = "Да";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(39, 235);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(335, 26);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "7.Бывали ли у вас приступы жара?";
-            // 
-            // gunaCheckBox11
-            // 
-            this.gunaCheckBox11.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox11.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox11.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox11.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox11.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox11.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox11.Location = new System.Drawing.Point(209, 264);
-            this.gunaCheckBox11.Name = "gunaCheckBox11";
-            this.gunaCheckBox11.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox11.TabIndex = 20;
-            this.gunaCheckBox11.Text = "Нет";
-            // 
-            // gunaCheckBox12
-            // 
-            this.gunaCheckBox12.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox12.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox12.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox12.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox12.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox12.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox12.Location = new System.Drawing.Point(107, 264);
-            this.gunaCheckBox12.Name = "gunaCheckBox12";
-            this.gunaCheckBox12.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox12.TabIndex = 19;
-            this.gunaCheckBox12.Text = "Да";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(471, 172);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(328, 26);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "6.Присутствует ли у вас чихание?";
-            // 
-            // gunaCheckBox13
-            // 
-            this.gunaCheckBox13.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox13.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox13.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox13.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox13.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox13.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox13.Location = new System.Drawing.Point(641, 201);
-            this.gunaCheckBox13.Name = "gunaCheckBox13";
-            this.gunaCheckBox13.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox13.TabIndex = 17;
-            this.gunaCheckBox13.Text = "Нет";
-            // 
-            // gunaCheckBox14
-            // 
-            this.gunaCheckBox14.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox14.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox14.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox14.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox14.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox14.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox14.Location = new System.Drawing.Point(539, 201);
-            this.gunaCheckBox14.Name = "gunaCheckBox14";
-            this.gunaCheckBox14.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox14.TabIndex = 16;
-            this.gunaCheckBox14.Text = "Да";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(39, 172);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(255, 26);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "5.Слезятся ли у вас глаза?";
-            // 
-            // gunaCheckBox15
-            // 
-            this.gunaCheckBox15.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox15.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox15.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox15.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox15.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox15.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox15.Location = new System.Drawing.Point(209, 201);
-            this.gunaCheckBox15.Name = "gunaCheckBox15";
-            this.gunaCheckBox15.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox15.TabIndex = 14;
-            this.gunaCheckBox15.Text = "Нет";
-            // 
-            // gunaCheckBox16
-            // 
-            this.gunaCheckBox16.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox16.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox16.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox16.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox16.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox16.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox16.Location = new System.Drawing.Point(107, 201);
-            this.gunaCheckBox16.Name = "gunaCheckBox16";
-            this.gunaCheckBox16.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox16.TabIndex = 13;
-            this.gunaCheckBox16.Text = "Да";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(471, 298);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(377, 26);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "10.Присутствует ли у вас боль в горле?";
-            // 
-            // gunaCheckBox17
-            // 
-            this.gunaCheckBox17.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox17.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox17.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox17.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox17.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox17.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox17.Location = new System.Drawing.Point(641, 327);
-            this.gunaCheckBox17.Name = "gunaCheckBox17";
-            this.gunaCheckBox17.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox17.TabIndex = 28;
-            this.gunaCheckBox17.Text = "Нет";
-            // 
-            // gunaCheckBox18
-            // 
-            this.gunaCheckBox18.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox18.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox18.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox18.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox18.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox18.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox18.Location = new System.Drawing.Point(539, 327);
-            this.gunaCheckBox18.Name = "gunaCheckBox18";
-            this.gunaCheckBox18.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox18.TabIndex = 27;
-            this.gunaCheckBox18.Text = "Да";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(39, 298);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(426, 26);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "9.Присутствует ли затрудненность дыхания?";
-            // 
-            // gunaCheckBox19
-            // 
-            this.gunaCheckBox19.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox19.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox19.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox19.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox19.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox19.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox19.Location = new System.Drawing.Point(209, 327);
-            this.gunaCheckBox19.Name = "gunaCheckBox19";
-            this.gunaCheckBox19.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox19.TabIndex = 25;
-            this.gunaCheckBox19.Text = "Нет";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(39, 370);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(503, 26);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "11.Присутствует ли у вас боль в мышцах и суставах?";
-            // 
-            // gunaCheckBox20
-            // 
-            this.gunaCheckBox20.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox20.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox20.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox20.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox20.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox20.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox20.Location = new System.Drawing.Point(293, 399);
-            this.gunaCheckBox20.Name = "gunaCheckBox20";
-            this.gunaCheckBox20.Size = new System.Drawing.Size(67, 31);
-            this.gunaCheckBox20.TabIndex = 31;
-            this.gunaCheckBox20.Text = "Нет";
-            // 
-            // gunaCheckBox21
-            // 
-            this.gunaCheckBox21.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox21.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox21.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox21.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox21.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox21.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox21.Location = new System.Drawing.Point(191, 399);
-            this.gunaCheckBox21.Name = "gunaCheckBox21";
-            this.gunaCheckBox21.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox21.TabIndex = 30;
-            this.gunaCheckBox21.Text = "Да";
-            // 
-            // EnterButton
-            // 
-            this.EnterButton.Animated = true;
-            this.EnterButton.AnimationHoverSpeed = 0.07F;
-            this.EnterButton.AnimationSpeed = 0.03F;
-            this.EnterButton.BackColor = System.Drawing.Color.Transparent;
-            this.EnterButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.EnterButton.BorderColor = System.Drawing.Color.Black;
-            this.EnterButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EnterButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.EnterButton.FocusedColor = System.Drawing.Color.Empty;
-            this.EnterButton.Font = new System.Drawing.Font("Comic Sans MS", 18F);
-            this.EnterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EnterButton.Image = null;
-            this.EnterButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.EnterButton.Location = new System.Drawing.Point(641, 370);
-            this.EnterButton.Margin = new System.Windows.Forms.Padding(4);
-            this.EnterButton.Name = "EnterButton";
-            this.EnterButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.EnterButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.EnterButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.EnterButton.OnHoverImage = null;
-            this.EnterButton.OnPressedColor = System.Drawing.Color.Black;
-            this.EnterButton.Radius = 7;
-            this.EnterButton.Size = new System.Drawing.Size(155, 60);
-            this.EnterButton.TabIndex = 33;
-            this.EnterButton.Text = "Узнать";
-            this.EnterButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.EnterButton.Click += new System.EventHandler(this.EnterButton_Click);
-            // 
-            // gunaCheckBox22
-            // 
-            this.gunaCheckBox22.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox22.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox22.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox22.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox22.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaCheckBox22.ForeColor = System.Drawing.Color.White;
-            this.gunaCheckBox22.Location = new System.Drawing.Point(107, 327);
-            this.gunaCheckBox22.Name = "gunaCheckBox22";
-            this.gunaCheckBox22.Size = new System.Drawing.Size(57, 31);
-            this.gunaCheckBox22.TabIndex = 34;
-            this.gunaCheckBox22.Text = "Да";
             // 
             // label13
             // 
@@ -577,55 +112,350 @@ namespace Covid19
     " \r\nо наличии или отсутствии заболеваний и несет ознакомительный характер!\r\n";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(157, 33);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(64, 30);
+            this.radioButton2.TabIndex = 42;
+            this.radioButton2.Text = "Нет";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(96, 33);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(55, 30);
+            this.radioButton1.TabIndex = 41;
+            this.radioButton1.Text = "Да";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(43, 58);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(317, 74);
+            this.groupBox1.TabIndex = 49;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Болели ли вы коронавирусом?";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton4);
+            this.groupBox2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(12, 138);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(360, 74);
+            this.groupBox2.TabIndex = 50;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Делали ли вы тест на коронавирус?";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton3.ForeColor = System.Drawing.Color.White;
+            this.radioButton3.Location = new System.Drawing.Point(188, 33);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(64, 30);
+            this.radioButton3.TabIndex = 42;
+            this.radioButton3.Text = "Нет";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton4.ForeColor = System.Drawing.Color.White;
+            this.radioButton4.Location = new System.Drawing.Point(127, 33);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(55, 30);
+            this.radioButton4.TabIndex = 41;
+            this.radioButton4.Text = "Да";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton7);
+            this.groupBox3.Controls.Add(this.radioButton5);
+            this.groupBox3.Controls.Add(this.radioButton6);
+            this.groupBox3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(12, 218);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(360, 100);
+            this.groupBox3.TabIndex = 51;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Вы делали тест в медецинском учереждении, аптечный или оба?";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton5.ForeColor = System.Drawing.Color.White;
+            this.radioButton5.Location = new System.Drawing.Point(85, 64);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(122, 30);
+            this.radioButton5.TabIndex = 42;
+            this.radioButton5.Text = "Аптечный";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton6.ForeColor = System.Drawing.Color.White;
+            this.radioButton6.Location = new System.Drawing.Point(14, 64);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(65, 30);
+            this.radioButton6.TabIndex = 41;
+            this.radioButton6.Text = "Оба";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton7.ForeColor = System.Drawing.Color.White;
+            this.radioButton7.Location = new System.Drawing.Point(213, 64);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(135, 30);
+            this.radioButton7.TabIndex = 43;
+            this.radioButton7.Text = "В больнице";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.radioButton8);
+            this.groupBox4.Controls.Add(this.radioButton9);
+            this.groupBox4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(12, 324);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(360, 100);
+            this.groupBox4.TabIndex = 52;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Оба ли теста были положительными?";
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton8.ForeColor = System.Drawing.Color.White;
+            this.radioButton8.Location = new System.Drawing.Point(178, 55);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(64, 30);
+            this.radioButton8.TabIndex = 44;
+            this.radioButton8.Text = "Нет";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton9.ForeColor = System.Drawing.Color.White;
+            this.radioButton9.Location = new System.Drawing.Point(117, 55);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(55, 30);
+            this.radioButton9.TabIndex = 43;
+            this.radioButton9.Text = "Да";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.gunaDateTimePicker2);
+            this.groupBox5.Controls.Add(this.gunaDateTimePicker1);
+            this.groupBox5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(493, 58);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(322, 143);
+            this.groupBox5.TabIndex = 53;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Укажите период, в который вы болели коронавоирусом";
+            // 
+            // gunaDateTimePicker1
+            // 
+            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker1.CustomFormat = null;
+            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(64, 61);
+            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
+            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(252, 30);
+            this.gunaDateTimePicker1.TabIndex = 0;
+            this.gunaDateTimePicker1.Text = "воскресенье, 23 мая 2021 г.";
+            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 5, 23, 16, 22, 15, 492);
+            // 
+            // gunaDateTimePicker2
+            // 
+            this.gunaDateTimePicker2.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker2.CustomFormat = null;
+            this.gunaDateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F);
+            this.gunaDateTimePicker2.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Location = new System.Drawing.Point(64, 97);
+            this.gunaDateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.Name = "gunaDateTimePicker2";
+            this.gunaDateTimePicker2.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Size = new System.Drawing.Size(252, 30);
+            this.gunaDateTimePicker2.TabIndex = 1;
+            this.gunaDateTimePicker2.Text = "воскресенье, 23 мая 2021 г.";
+            this.gunaDateTimePicker2.Value = new System.DateTime(2021, 5, 23, 16, 22, 15, 492);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 26);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "От :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(10, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 26);
+            this.label3.TabIndex = 55;
+            this.label3.Text = "До :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.radioButton10);
+            this.groupBox6.Controls.Add(this.radioButton11);
+            this.groupBox6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
+            this.groupBox6.Location = new System.Drawing.Point(493, 218);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(322, 74);
+            this.groupBox6.TabIndex = 54;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Принимали ли вы лекарства?";
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton10.ForeColor = System.Drawing.Color.White;
+            this.radioButton10.Location = new System.Drawing.Point(159, 33);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(64, 30);
+            this.radioButton10.TabIndex = 42;
+            this.radioButton10.Text = "Нет";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.radioButton11.ForeColor = System.Drawing.Color.White;
+            this.radioButton11.Location = new System.Drawing.Point(98, 33);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(55, 30);
+            this.radioButton11.TabIndex = 41;
+            this.radioButton11.Text = "Да";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // gunaTextBox1
+            // 
+            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox1.Location = new System.Drawing.Point(493, 315);
+            this.gunaTextBox1.Name = "gunaTextBox1";
+            this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.Size = new System.Drawing.Size(322, 53);
+            this.gunaTextBox1.TabIndex = 55;
+            this.gunaTextBox1.Text = "Название";
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(927, 505);
+            this.Controls.Add(this.gunaTextBox1);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.gunaCheckBox22);
-            this.Controls.Add(this.EnterButton);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.gunaCheckBox20);
-            this.Controls.Add(this.gunaCheckBox21);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.gunaCheckBox17);
-            this.Controls.Add(this.gunaCheckBox18);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.gunaCheckBox19);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.gunaCheckBox9);
-            this.Controls.Add(this.gunaCheckBox10);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.gunaCheckBox11);
-            this.Controls.Add(this.gunaCheckBox12);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.gunaCheckBox13);
-            this.Controls.Add(this.gunaCheckBox14);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.gunaCheckBox15);
-            this.Controls.Add(this.gunaCheckBox16);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.gunaCheckBox5);
-            this.Controls.Add(this.gunaCheckBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.gunaCheckBox7);
-            this.Controls.Add(this.gunaCheckBox8);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.gunaCheckBox3);
-            this.Controls.Add(this.gunaCheckBox4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.gunaCheckBox2);
-            this.Controls.Add(this.gunaCheckBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Test";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Test";
+            this.Load += new System.EventHandler(this.Test_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,42 +465,30 @@ namespace Covid19
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox4;
-        private System.Windows.Forms.Label label12;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox20;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox21;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox17;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox18;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox19;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox9;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox10;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox11;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox12;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox13;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox14;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox15;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox16;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox5;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox6;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox7;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox8;
-        private Guna.UI.WinForms.GunaButton EnterButton;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox22;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
     }
 }

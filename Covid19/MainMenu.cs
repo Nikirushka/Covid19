@@ -111,7 +111,11 @@ namespace Covid19
 
         private void gunaGradientButton6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Map map = new Map(2);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = map.ShowDialog();
+            this.Show();
         }
 
         private void gunaGradientButton5_Click(object sender, EventArgs e)
@@ -126,7 +130,7 @@ namespace Covid19
         private void gunaGradientButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Map map = new Map();
+            Map map = new Map(1);
             DialogResult dialogResult = new DialogResult();
             dialogResult = map.ShowDialog();
             this.Show();
@@ -236,7 +240,11 @@ namespace Covid19
 
         private void PlaneButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Diary diary = new Diary();
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = diary.ShowDialog();
+            this.Show();
         }
 
         private void gunaGradientButton2_MouseEnter(object sender, EventArgs e)
