@@ -59,3 +59,4 @@ D:\Covid\Covid19\obj\Debug\Covid19.csproj.CopyComplete
 D:\Covid\Covid19\obj\Debug\Covid19.exe
 D:\Covid\Covid19\obj\Debug\Covid19.pdb
 D:\Covid\Covid19\obj\Debug\Covid19.Diary.resources
+D:\Covid\Covid19\obj\Debug\Covid19.TestRes.resources

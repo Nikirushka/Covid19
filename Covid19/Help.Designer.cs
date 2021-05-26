@@ -78,10 +78,9 @@ namespace Covid19
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.label1.Location = new System.Drawing.Point(12, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 528);
+            this.label1.Size = new System.Drawing.Size(373, 66);
             this.label1.TabIndex = 36;
-            this.label1.Text = "1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. П" +
-    "РИМЕР\r\n1. ПРИМЕР\r\n\r\n1. ПРИМЕР\r\n\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n1. ПРИМЕР\r\n";
+            this.label1.Text = "Как пользоваться программой:\r\n1. Тык тык тык\r\n";
             // 
             // Help
             // 
