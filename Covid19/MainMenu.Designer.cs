@@ -497,7 +497,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(185, 33);
             this.label11.TabIndex = 17;
-            this.label11.Text = "Дневник";
+            this.label11.Text = "Профиль";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label12

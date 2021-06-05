@@ -26,7 +26,7 @@ namespace Covid19
             gunaButton1.Hide();
             label1.Text = "Регистрация";
         }
-        public NewUser(int _uid,string _name, string _surname, string _patr, string _log, string _pas)
+        public NewUser(int _uid,string _name, string _surname, string _patr, string _log, string _pas,string _phone, string _email, string _age)
         {
             InitializeComponent();
             UserID = _uid;
@@ -36,6 +36,9 @@ namespace Covid19
             TextBox3.Text = _patr;
             TextBox4.Text = _log;
             TextBox5.Text = _pas;
+            maskedTextBox1.Text = _phone;
+            gunaTextBox2.Text = _email;
+            gunaTextBox1.Text = _age;
             gunaButton1.Show();
         }
 
@@ -70,7 +73,7 @@ namespace Covid19
                 {
                     connection.Open();
 
-                    query = $"insert into [user] values(N'{TextBox1.Text}',N'{TextBox2.Text}',N'{TextBox3.Text}',N'{TextBox4.Text}',N'{TextBox5.Text}',0)";
+                    query = $"insert into [user] values(N'{TextBox1.Text}',N'{TextBox2.Text}',N'{TextBox3.Text}',N'{maskedTextBox1.Text}',N'{gunaTextBox2.Text}',N'{gunaTextBox1.Text}',N'{TextBox4.Text}',N'{TextBox5.Text}',0)";
                     cmd = new SqlCommand(query, connection);
                     cmd.ExecuteNonQuery();
                     connection.Close();
@@ -96,7 +99,7 @@ namespace Covid19
             {
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                string query = $"update [User] set Surname=N'{TextBox1.Text}', Name=N'{TextBox2.Text}', Patronymic=N'{TextBox3.Text}', Login=N'{TextBox4.Text}',Password=N'{TextBox5.Text}' where id={UserID}";
+                string query = $"update [User] set Surname=N'{TextBox1.Text}', Name=N'{TextBox2.Text}', Patronymic=N'{TextBox3.Text}', Login=N'{TextBox4.Text}',Password=N'{TextBox5.Text}',Phone=N'{maskedTextBox1.Text}', Age = N'{gunaTextBox1.Text}', Email=N'{gunaTextBox2.Text}' where id={UserID}";
                 cmd = new SqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
                 connection.Close();

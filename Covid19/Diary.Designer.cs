@@ -85,7 +85,7 @@ namespace Covid19
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(926, 37);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Дневник";
+            this.label2.Text = "Дневник Болезни";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // EnterButton
@@ -141,6 +141,7 @@ namespace Covid19
             this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gunaTextBox1.Location = new System.Drawing.Point(6, 62);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';

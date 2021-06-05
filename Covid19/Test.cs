@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,22 @@ namespace Covid19
 {
     public partial class Test : Form
     {
+        SqlConnection connection = null;
+        SqlDataReader reader = null;
+        SqlCommand cmd;
+        DataSet ds;
+        SqlDataAdapter adapter;
+        int UserID;
+        string connectionString = @"Server=tcp:covidtestik19.database.windows.net,1433;Initial Catalog=Covid19;Persist Security Info=False;User ID=Liza;Password=LiLit_01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         public Test()
         {
             InitializeComponent();
+        }
+        public Test(int _ui)
+        {
+            InitializeComponent();
+            UserID = _ui;
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -104,6 +118,19 @@ namespace Covid19
                 DialogResult dialogResult = new DialogResult();
                 dialogResult = testRes.ShowDialog();
                 this.Show();
+                //try
+                //{
+                //    connection = new SqlConnection(connectionString);
+                //    connection.Open();
+                //    string query = $"insert into SicknessDiary values ({UserID},N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}',N'{gunaTextBox1.Text}')";
+                //    cmd = new SqlCommand(query, connection);
+                //    reader = cmd.ExecuteReader();
+                //    connection.Close();
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show(ex.Message);
+                //}
             }
             else if(covid==3)
             {

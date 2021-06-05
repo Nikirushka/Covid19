@@ -241,10 +241,11 @@ namespace Covid19
         private void PlaneButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Diary diary = new Diary();
+            Profile profile = new Profile(UserId);
             DialogResult dialogResult = new DialogResult();
-            dialogResult = diary.ShowDialog();
+            dialogResult = profile.ShowDialog();
             this.Show();
+            GetName();
         }
 
         private void gunaGradientButton2_MouseEnter(object sender, EventArgs e)
