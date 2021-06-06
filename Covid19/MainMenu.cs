@@ -232,7 +232,7 @@ namespace Covid19
         private void TestButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Test test = new Test();
+            Test test = new Test(UserId);
             DialogResult dialogResult = new DialogResult();
             dialogResult = test.ShowDialog();
             this.Show();

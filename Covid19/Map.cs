@@ -42,9 +42,14 @@ namespace Covid19
             if (mapp==1)
             {
                 webBrowser1.Url = new Uri("https://yandex.by/maps/covid19?ll=27.854172%2C36.733082&z=2.5");
+                label2.Text = "Карта распространения коронавируса в мире";
             }  
             else
+            {
                 webBrowser1.Url = new Uri("https://www.google.com/maps/search/карта+мест+вакцинации+рб/@53.8952521,27.5051996,11.74z");
+                label2.Text = "Карта пунктов вакцинации в Беларуси";
+            }
+               
         }
         private bool check = false;
         private void label1_Click(object sender, EventArgs e)

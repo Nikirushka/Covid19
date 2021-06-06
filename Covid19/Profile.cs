@@ -108,5 +108,14 @@ namespace Covid19
             dialogResult = diary.ShowDialog();
             this.Show();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Diary2 diary2 = new Diary2(UserID);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = diary2.ShowDialog();
+            this.Show();
+        }
     }
 }

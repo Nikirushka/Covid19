@@ -77,6 +77,12 @@
     <Compile Include="Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Diary2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diary2.Designer.cs">
+      <DependentUpon>Diary2.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestRes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,12 +112,6 @@
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewAdmin.Designer.cs">
-      <DependentUpon>NewAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="NewUser.cs">
       <SubType>Form</SubType>
@@ -162,6 +162,9 @@
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diary2.resx">
+      <DependentUpon>Diary2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestRes.resx">
       <DependentUpon>TestRes.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,9 +179,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewAdmin.resx">
-      <DependentUpon>NewAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>

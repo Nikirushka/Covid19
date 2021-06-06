@@ -31,10 +31,138 @@ namespace Covid19
             InitializeComponent();
             UserID = uid;
         }
-
+        Point point = new Point(12, 68);
         private void Admin_Load(object sender, EventArgs e)
         {
             UpdateClients();
+            Test();
+            Stats();
+            users.Location = point;
+            tests.Hide();
+            users.Show();
+            Stat.Hide();
+        }
+
+        private void Test()
+        {
+            try
+            {
+                try
+                {
+                    string query = $"select count(*) from TestCorona";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label3.Text = $"Всего тестов : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from TestCorona where TestCorona.Result = N'Вероятнее всего, симптомы, которые Вы указали, соответствуют наличию covid19. В данной ситуации советуем Вам обратиться за помощью к вашему лечащему врачу.'";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label4.Text = $"Количество Covid19 : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from TestCorona where TestCorona.Result = N'Вероятнее всего, симптомы, которые Вы указали, соответствуют наличию аллергии. В данной ситуации советуем Вам обратиться за помощью к вашему лечащему врачу.'";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label5.Text = $"Количество аллергии : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from TestCorona where TestCorona.Result = N'Вероятнее всего, симптомы, которые Вы указали, соответствуют наличию гриппа. В данной ситуации советуем Вам обратиться за помощью к вашему лечащему врачу.'";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label6.Text = $"Количество гриппа : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from TestCorona where TestCorona.Result = N'Вы здоровы!'";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label9.Text = $"Количество здоровых : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        connection.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        private void Stats()
+        {
+            try
+            {
+                try
+                {
+                    string query = $"select count(*) from [User]";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label12.Text = $"Всего пользователей : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from [User] WHERE Age between 0 and 18";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label7.Text = $"Количество пользователей 0-18 : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from [User] WHERE Age between 19 and 35";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label11.Text = $"Количество пользователей 19-35 : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                        query = $"select count(*) from [User] WHERE Age between 36 and 80";
+                        cmd = new SqlCommand(query, connection);
+                        reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            label10.Text = $"Количество пользователей 36-80 : {reader.GetInt32(0)}";
+                        }
+                        reader.Close();
+                       
+                        connection.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void UpdateClients()
@@ -173,6 +301,33 @@ namespace Covid19
         private void gunaButton3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaButton3_Click_1(object sender, EventArgs e)
+        {
+            UpdateClients();
+            users.Location = point;
+            tests.Hide();
+            users.Show();
+            Stat.Hide();
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            Test();
+            tests.Location = point;
+            tests.Show();
+            users.Hide();
+            Stat.Hide();
+        }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            Stats();
+            Stat.Location = point;
+            Stat.Show();
+            users.Hide();
+            tests.Hide();
         }
     }
 }

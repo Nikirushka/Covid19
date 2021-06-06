@@ -47,5 +47,15 @@ namespace Covid19
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TestRes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -79,9 +79,9 @@ namespace Covid19
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(914, 157);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Программа \"Covid19\" создана с целью учёта и статистики людей,\r\nсвязанных с короно" +
-    "вирусом.\r\nРазработана Литвоной Елизаветой 2021\r\nМГКЭ\r\n";
+            this.label1.Text = "РЕЗУЛЬТАТ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TestRes
             // 
@@ -99,6 +99,7 @@ namespace Covid19
             this.Name = "TestRes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestRes";
+            this.Load += new System.EventHandler(this.TestRes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

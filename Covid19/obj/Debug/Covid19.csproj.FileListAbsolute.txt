@@ -40,13 +40,11 @@ E:\GitHub\Covid19\Covid_19\Covid19\obj\Debug\Covid19.Info.resources
 D:\Covid\Covid19\bin\Debug\Covid19.exe.config
 D:\Covid\Covid19\bin\Debug\Covid19.exe
 D:\Covid\Covid19\bin\Debug\Covid19.pdb
-D:\Covid\Covid19\obj\Debug\Covid19.csprojAssemblyReference.cache
 D:\Covid\Covid19\obj\Debug\Covid19.Admin.resources
 D:\Covid\Covid19\obj\Debug\Covid19.Info.resources
 D:\Covid\Covid19\obj\Debug\Covid19.History.resources
 D:\Covid\Covid19\obj\Debug\Covid19.Login.resources
 D:\Covid\Covid19\obj\Debug\Covid19.MainMenu.resources
-D:\Covid\Covid19\obj\Debug\Covid19.NewAdmin.resources
 D:\Covid\Covid19\obj\Debug\Covid19.NewUser.resources
 D:\Covid\Covid19\obj\Debug\Covid19.Properties.Resources.resources
 D:\Covid\Covid19\obj\Debug\Covid19.Symptoms.resources
@@ -61,3 +59,5 @@ D:\Covid\Covid19\obj\Debug\Covid19.pdb
 D:\Covid\Covid19\obj\Debug\Covid19.Diary.resources
 D:\Covid\Covid19\obj\Debug\Covid19.TestRes.resources
 D:\Covid\Covid19\obj\Debug\Covid19.Profile.resources
+D:\Covid\Covid19\obj\Debug\Covid19.Diary2.resources
+D:\Covid\Covid19\obj\Debug\Covid19.csprojAssemblyReference.cache
