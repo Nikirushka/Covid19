@@ -47,14 +47,15 @@ namespace Covid19
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.tests = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Stat = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,6 +66,7 @@ namespace Covid19
             this.tests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Stat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -254,7 +256,7 @@ namespace Covid19
             this.users.Controls.Add(this.AllDataGridView);
             this.users.Controls.Add(this.EnterButton);
             this.users.Controls.Add(this.gunaButton1);
-            this.users.Location = new System.Drawing.Point(104, 446);
+            this.users.Location = new System.Drawing.Point(785, 88);
             this.users.Name = "users";
             this.users.Size = new System.Drawing.Size(799, 433);
             this.users.TabIndex = 14;
@@ -358,79 +360,20 @@ namespace Covid19
             this.tests.Controls.Add(this.label4);
             this.tests.Controls.Add(this.label3);
             this.tests.Controls.Add(this.label1);
-            this.tests.Location = new System.Drawing.Point(231, 397);
+            this.tests.Location = new System.Drawing.Point(492, 409);
             this.tests.Name = "tests";
             this.tests.Size = new System.Drawing.Size(799, 433);
             this.tests.TabIndex = 16;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(799, 37);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Статистика по тестам пользователей :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(30, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 33);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Всего тестов :";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(30, 191);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 33);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Количество Covid19 :";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(30, 224);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(282, 33);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Количество аллергии :";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(30, 257);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(254, 33);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Количество гриппа :";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pictureBox1.Image = global::Covid19.Properties.Resources.Test;
+            this.pictureBox1.Location = new System.Drawing.Point(449, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // label9
             // 
@@ -446,27 +389,97 @@ namespace Covid19
             this.label9.Text = "Количество здоровых :";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // label6
             // 
-            this.pictureBox1.Image = global::Covid19.Properties.Resources.Test;
-            this.pictureBox1.Location = new System.Drawing.Point(449, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(30, 257);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(254, 33);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Количество гриппа :";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(30, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(282, 33);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Количество аллергии :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(30, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(257, 33);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Количество Covid19 :";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(30, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 33);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Всего тестов :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(17, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(782, 37);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Статистика по тестам пользователей :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Stat
             // 
+            this.Stat.Controls.Add(this.pictureBox2);
             this.Stat.Controls.Add(this.label7);
             this.Stat.Controls.Add(this.label10);
             this.Stat.Controls.Add(this.label11);
             this.Stat.Controls.Add(this.label12);
             this.Stat.Controls.Add(this.label13);
-            this.Stat.Location = new System.Drawing.Point(12, 68);
+            this.Stat.Location = new System.Drawing.Point(703, 254);
             this.Stat.Name = "Stat";
             this.Stat.Size = new System.Drawing.Size(799, 433);
             this.Stat.TabIndex = 17;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Covid19.Properties.Resources.Profile;
+            this.pictureBox2.Location = new System.Drawing.Point(55, 78);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(252, 246);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
@@ -475,7 +488,7 @@ namespace Covid19
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(18, 76);
+            this.label7.Location = new System.Drawing.Point(342, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(404, 33);
             this.label7.TabIndex = 24;
@@ -489,7 +502,7 @@ namespace Covid19
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(18, 142);
+            this.label10.Location = new System.Drawing.Point(342, 221);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(423, 33);
             this.label10.TabIndex = 20;
@@ -503,7 +516,7 @@ namespace Covid19
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(18, 109);
+            this.label11.Location = new System.Drawing.Point(342, 188);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(419, 33);
             this.label11.TabIndex = 19;
@@ -517,7 +530,7 @@ namespace Covid19
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(18, 43);
+            this.label12.Location = new System.Drawing.Point(342, 122);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(276, 33);
             this.label12.TabIndex = 18;
@@ -563,6 +576,7 @@ namespace Covid19
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Stat.ResumeLayout(false);
             this.Stat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -596,5 +610,6 @@ namespace Covid19
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

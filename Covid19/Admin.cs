@@ -220,9 +220,9 @@ namespace Covid19
             string c = (AllDataGridView[2, index].Value.ToString());
             string d = (AllDataGridView[3, index].Value.ToString());
             string ee = (AllDataGridView[4, index].Value.ToString());
-            string f = (AllDataGridView[5, index].Value.ToString());
-            string g = (AllDataGridView[6, index].Value.ToString());
-            string h = (AllDataGridView[7, index].Value.ToString());
+            string f = (AllDataGridView[6, index].Value.ToString());
+            string g = (AllDataGridView[7, index].Value.ToString());
+            string h = (AllDataGridView[8, index].Value.ToString());
             int index1 = 0;
             foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
             {

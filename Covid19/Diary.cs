@@ -47,17 +47,38 @@ namespace Covid19
                 cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 connection.Close();
+                DiaryUp();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        bool check;
+
+        private void DiaryUp()
+        {
+            try
+            {
+                string query = $"select Date1 as 'С', Date2 'По',Medications as 'Лекарства' from SicknessDiary where ID_user={UserID}";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    AllDataGridView.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void Diary_Load(object sender, EventArgs e)
         {
             EnterButton.Hide();
-            gunaButton1.Hide();
             groupBox2.Hide();
             groupBox3.Hide();
             groupBox4.Hide();
@@ -67,31 +88,7 @@ namespace Covid19
             groupBox7.Hide();
             gunaDateTimePicker1.Value = DateTime.Now;
             gunaDateTimePicker2.Value = DateTime.Now;
-            try
-            {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"SELECT medications FROM [SicknessDiary] WHERE ID_user=N'{UserID}'";
-                cmd = new SqlCommand(query, connection);
-                reader = cmd.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        check = true;
-                        gunaTextBox1.Text = reader.GetString(0);
-                    }
-                }
-                else
-                {
-                    check = false;
-                }
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            DiaryUp();
         }
 
         private void radioButton2_Click(object sender, EventArgs e)
@@ -113,14 +110,9 @@ namespace Covid19
                             {
                                 groupBox7.Show();
                                 gunaTextBox1.Show();
-                                if (check == false)
-                                {
-                                    EnterButton.Show();
-                                }
-                                else
-                                {
-                                    gunaButton1.Show();
-                                }
+
+                                EnterButton.Show();
+
                             }
                             else
                             {
@@ -172,21 +164,6 @@ namespace Covid19
 
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"update SicknessDiary set Date1=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}', Date2=N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}',medications=N'{gunaTextBox1.Text}'";
-                cmd = new SqlCommand(query, connection);
-                reader = cmd.ExecuteReader();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
     }
 }

@@ -30,22 +30,28 @@ namespace Covid19
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diary2));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.EnterButton = new Guna.UI.WinForms.GunaButton();
+            this.AllDataGridView = new Guna.UI.WinForms.GunaDataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -63,7 +69,7 @@ namespace Covid19
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(493, 37);
+            this.label2.Size = new System.Drawing.Size(780, 37);
             this.label2.TabIndex = 3;
             this.label2.Text = "Дневник вакцинации ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -75,7 +81,7 @@ namespace Covid19
             this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(454, 6);
+            this.label13.Location = new System.Drawing.Point(808, 6);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(32, 33);
@@ -85,30 +91,16 @@ namespace Covid19
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.gunaDateTimePicker2);
             this.groupBox5.Controls.Add(this.gunaDateTimePicker1);
             this.groupBox5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(85, 46);
+            this.groupBox5.Location = new System.Drawing.Point(498, 90);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(322, 143);
+            this.groupBox5.Size = new System.Drawing.Size(346, 103);
             this.groupBox5.TabIndex = 61;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Укажите период, в который вы вакцинировались :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(10, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 26);
-            this.label3.TabIndex = 55;
-            this.label3.Text = "До :";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
@@ -117,32 +109,9 @@ namespace Covid19
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(10, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 26);
+            this.label1.Size = new System.Drawing.Size(0, 26);
             this.label1.TabIndex = 54;
-            this.label1.Text = "От :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gunaDateTimePicker2
-            // 
-            this.gunaDateTimePicker2.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker2.CustomFormat = null;
-            this.gunaDateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F);
-            this.gunaDateTimePicker2.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker2.Location = new System.Drawing.Point(64, 97);
-            this.gunaDateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker2.Name = "gunaDateTimePicker2";
-            this.gunaDateTimePicker2.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker2.Size = new System.Drawing.Size(252, 30);
-            this.gunaDateTimePicker2.TabIndex = 1;
-            this.gunaDateTimePicker2.Text = "воскресенье, 23 мая 2021 г.";
-            this.gunaDateTimePicker2.Value = new System.DateTime(2021, 5, 23, 16, 22, 15, 492);
             // 
             // gunaDateTimePicker1
             // 
@@ -153,7 +122,7 @@ namespace Covid19
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(64, 61);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(6, 61);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -161,49 +130,19 @@ namespace Covid19
             this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(252, 30);
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(334, 30);
             this.gunaDateTimePicker1.TabIndex = 0;
             this.gunaDateTimePicker1.Text = "воскресенье, 23 мая 2021 г.";
             this.gunaDateTimePicker1.Value = new System.DateTime(2021, 5, 23, 16, 22, 15, 492);
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.Animated = true;
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Comic Sans MS", 18F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(174, 325);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 7;
-            this.gunaButton1.Size = new System.Drawing.Size(155, 60);
-            this.gunaButton1.TabIndex = 66;
-            this.gunaButton1.Text = "Изменить";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.gunaTextBox1);
             this.groupBox7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(85, 195);
+            this.groupBox7.Location = new System.Drawing.Point(497, 297);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(322, 123);
+            this.groupBox7.Size = new System.Drawing.Size(348, 123);
             this.groupBox7.TabIndex = 67;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Напишите ваше самочувствие после вакцинации :";
@@ -222,7 +161,7 @@ namespace Covid19
             this.gunaTextBox1.Location = new System.Drawing.Point(6, 62);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Size = new System.Drawing.Size(310, 46);
+            this.gunaTextBox1.Size = new System.Drawing.Size(335, 46);
             this.gunaTextBox1.TabIndex = 62;
             this.gunaTextBox1.Text = "Название";
             // 
@@ -241,7 +180,7 @@ namespace Covid19
             this.EnterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EnterButton.Image = null;
             this.EnterButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.EnterButton.Location = new System.Drawing.Point(174, 325);
+            this.EnterButton.Location = new System.Drawing.Point(599, 427);
             this.EnterButton.Margin = new System.Windows.Forms.Padding(4);
             this.EnterButton.Name = "EnterButton";
             this.EnterButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -256,14 +195,120 @@ namespace Covid19
             this.EnterButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.EnterButton.Click += new System.EventHandler(this.EnterButton_Click);
             // 
+            // AllDataGridView
+            // 
+            this.AllDataGridView.AllowUserToAddRows = false;
+            this.AllDataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.AllDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AllDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AllDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.AllDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.AllDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AllDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AllDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AllDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AllDataGridView.ColumnHeadersHeight = 24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AllDataGridView.EnableHeadersVisualStyles = false;
+            this.AllDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.AllDataGridView.Location = new System.Drawing.Point(6, 58);
+            this.AllDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.AllDataGridView.Name = "AllDataGridView";
+            this.AllDataGridView.ReadOnly = true;
+            this.AllDataGridView.RowHeadersVisible = false;
+            this.AllDataGridView.RowHeadersWidth = 51;
+            this.AllDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AllDataGridView.Size = new System.Drawing.Size(482, 429);
+            this.AllDataGridView.TabIndex = 68;
+            this.AllDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.LightBlue;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.AllDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.AllDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            this.AllDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.AllDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.Height = 24;
+            this.AllDataGridView.ThemeStyle.ReadOnly = true;
+            this.AllDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            this.AllDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AllDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.AllDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.AllDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.gunaTextBox2);
+            this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(499, 199);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(346, 92);
+            this.groupBox1.TabIndex = 68;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Напишите название вакцинации :";
+            // 
+            // gunaTextBox2
+            // 
+            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTextBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gunaTextBox2.Location = new System.Drawing.Point(6, 33);
+            this.gunaTextBox2.Name = "gunaTextBox2";
+            this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.Size = new System.Drawing.Size(333, 46);
+            this.gunaTextBox2.TabIndex = 62;
+            this.gunaTextBox2.Text = "Название";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(499, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(347, 37);
+            this.label3.TabIndex = 69;
+            this.label3.Text = "Новая вакцинация";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Diary2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(499, 406);
+            this.ClientSize = new System.Drawing.Size(853, 500);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.AllDataGridView);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.EnterButton);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label13);
@@ -279,6 +324,8 @@ namespace Covid19
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,13 +338,14 @@ namespace Covid19
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.GroupBox groupBox7;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
         private Guna.UI.WinForms.GunaButton EnterButton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaDataGridView AllDataGridView;
+        private System.Windows.Forms.Label label3;
     }
 }

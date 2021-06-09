@@ -79,7 +79,8 @@ namespace Covid19
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(914, 157);
             this.label1.TabIndex = 36;
-            this.label1.Text = "РЕЗУЛЬТАТ";
+            this.label1.Text = "Данный продукт создан в качестве дипломного проекта\r\nЛитвиновой Елизаветой 35 ТП\r" +
+    "\n2021";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Info
@@ -87,7 +88,7 @@ namespace Covid19
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(927, 186);
+            this.ClientSize = new System.Drawing.Size(927, 154);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label2);

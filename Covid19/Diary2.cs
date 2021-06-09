@@ -30,7 +30,6 @@ namespace Covid19
         {
             InitializeComponent();
             UserID = a;
-            
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -43,39 +42,33 @@ namespace Covid19
         {
 
         }
-        bool check;
-        private void Diary2_Load(object sender, EventArgs e)
+
+        private void Vaccine()
         {
-            
-            gunaDateTimePicker1.Value = DateTime.Now;
-            gunaDateTimePicker2.Value = DateTime.Now;
             try
             {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"SELECT result FROM [VaccineDiary] WHERE ID_user=N'{UserID}'";
-                cmd = new SqlCommand(query, connection);
-                reader = cmd.ExecuteReader();
-                if (reader.HasRows)
+                string query = $"select Date1 as 'Дата', NameVaccine as 'Название вакцины', Result as 'Самочувствие' from VaccineDiary where ID_user={UserID}";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    while (reader.Read())
-                    {
-                        EnterButton.Hide();
-                        gunaButton1.Show();
-                        gunaTextBox1.Text = reader.GetString(0);
-                    }
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    AllDataGridView.DataSource = ds.Tables[0];
                 }
-                else
-                {
-                    EnterButton.Show();
-                    gunaButton1.Hide();
-                }
-                connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void Diary2_Load(object sender, EventArgs e)
+        {
+            
+            gunaDateTimePicker1.Value = DateTime.Now;
+            Vaccine();
         }
 
         private void EnterButton_Click(object sender, EventArgs e)
@@ -84,7 +77,7 @@ namespace Covid19
             {
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                string query = $"insert into VaccineDiary values ({UserID},N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}',N'{gunaTextBox1.Text}')";
+                string query = $"insert into VaccineDiary values ({UserID},N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaTextBox2.Text}',N'{gunaTextBox1.Text}')";
                 cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 connection.Close();
@@ -93,23 +86,8 @@ namespace Covid19
             {
                 MessageBox.Show(ex.Message);
             }
+            Vaccine();
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"update VaccineDiary set Date1=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}', Date2=N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}',Result=N'{gunaTextBox1.Text}'";
-                cmd = new SqlCommand(query, connection);
-                reader = cmd.ExecuteReader();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }

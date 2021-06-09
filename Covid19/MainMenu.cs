@@ -37,7 +37,7 @@ namespace Covid19
         {
             System.Net.WebClient wc = new System.Net.WebClient();
             String Response = wc.DownloadString("https://www.worldometers.info/coronavirus/country/belarus/");
-            String Rate = System.Text.RegularExpressions.Regex.Match(Response, @"<ul class=""news_ul""><li class=""news_li""><strong>([0-9]+\,[0-9]+) new cases</strong>").Groups[1].Value;
+            String Rate = System.Text.RegularExpressions.Regex.Match(Response, @"<ul class=""news_ul""><li class=""news_li""><strong>([0-9]+) new cases</strong>").Groups[1].Value;
             return Rate;
         }
         private String AllBelarusCovid()
