@@ -62,7 +62,7 @@ namespace Covid19
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(442, 9);
+            this.label2.Location = new System.Drawing.Point(457, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 33);
@@ -138,7 +138,7 @@ namespace Covid19
             this.EnterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EnterButton.Image = null;
             this.EnterButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.EnterButton.Location = new System.Drawing.Point(126, 345);
+            this.EnterButton.Location = new System.Drawing.Point(140, 344);
             this.EnterButton.Margin = new System.Windows.Forms.Padding(4);
             this.EnterButton.Name = "EnterButton";
             this.EnterButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -165,7 +165,7 @@ namespace Covid19
             this.TextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox4.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox4.Location = new System.Drawing.Point(126, 229);
+            this.TextBox4.Location = new System.Drawing.Point(140, 228);
             this.TextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.PasswordChar = '\0';
@@ -207,7 +207,7 @@ namespace Covid19
             this.TextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox5.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox5.Location = new System.Drawing.Point(126, 287);
+            this.TextBox5.Location = new System.Drawing.Point(140, 286);
             this.TextBox5.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.PasswordChar = '\0';
@@ -231,7 +231,7 @@ namespace Covid19
             this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(126, 345);
+            this.gunaButton1.Location = new System.Drawing.Point(140, 344);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -263,7 +263,7 @@ namespace Covid19
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 7;
-            this.gunaTextBox1.Size = new System.Drawing.Size(220, 50);
+            this.gunaTextBox1.Size = new System.Drawing.Size(246, 50);
             this.gunaTextBox1.TabIndex = 23;
             this.gunaTextBox1.Text = "Возраст";
             // 
@@ -284,7 +284,7 @@ namespace Covid19
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.Radius = 7;
-            this.gunaTextBox2.Size = new System.Drawing.Size(220, 50);
+            this.gunaTextBox2.Size = new System.Drawing.Size(246, 50);
             this.gunaTextBox2.TabIndex = 22;
             this.gunaTextBox2.Text = "Email";
             // 
@@ -293,9 +293,9 @@ namespace Covid19
             this.maskedTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 18F);
             this.maskedTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.maskedTextBox1.Location = new System.Drawing.Point(241, 57);
-            this.maskedTextBox1.Mask = "000-00-000-00-00";
+            this.maskedTextBox1.Mask = "+375-00-000-00-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(220, 41);
+            this.maskedTextBox1.Size = new System.Drawing.Size(248, 41);
             this.maskedTextBox1.TabIndex = 47;
             // 
             // NewUser
@@ -303,7 +303,7 @@ namespace Covid19
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(478, 413);
+            this.ClientSize = new System.Drawing.Size(500, 413);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.gunaTextBox2);
