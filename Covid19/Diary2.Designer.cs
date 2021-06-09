@@ -163,7 +163,7 @@ namespace Covid19
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Size = new System.Drawing.Size(335, 46);
             this.gunaTextBox1.TabIndex = 62;
-            this.gunaTextBox1.Text = "Название";
+            this.gunaTextBox1.Text = "Самочувствие";
             // 
             // EnterButton
             // 
@@ -268,7 +268,7 @@ namespace Covid19
             this.groupBox1.Size = new System.Drawing.Size(346, 92);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Напишите название вакцинации :";
+            this.groupBox1.Text = "Напишите название вакцины :";
             // 
             // gunaTextBox2
             // 

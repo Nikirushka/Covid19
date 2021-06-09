@@ -80,7 +80,6 @@ namespace Covid19
         {
             EnterButton.Hide();
             groupBox2.Hide();
-            groupBox3.Hide();
             groupBox4.Hide();
             groupBox5.Hide();
             groupBox6.Hide();
@@ -97,10 +96,7 @@ namespace Covid19
             {
                 groupBox2.Show();
                 if (radioButton4.Checked == true)
-                {
-                    groupBox3.Show();
-                    if (radioButton6.Checked == true || radioButton5.Checked == true || radioButton7.Checked == true)
-                    {
+                {      
                         groupBox4.Show();
                         if (radioButton9.Checked == true)
                         {
@@ -127,19 +123,11 @@ namespace Covid19
                             gunaTextBox1.Hide();
                             groupBox7.Hide();
                         }
-                    }
-                    else
-                    {
-                        groupBox7.Hide();
-                        groupBox4.Hide();
-                        groupBox5.Hide();
-                        groupBox6.Hide();
-                        gunaTextBox1.Hide();
-                    }
+                    
                 }
                 else
                 {
-                    groupBox3.Hide();
+                    
                     groupBox4.Hide();
                     groupBox5.Hide();
                     groupBox6.Hide();
@@ -150,7 +138,7 @@ namespace Covid19
             else
             {
                 groupBox2.Hide();
-                groupBox3.Hide();
+               
                 groupBox4.Hide();
                 groupBox5.Hide();
                 groupBox6.Hide();

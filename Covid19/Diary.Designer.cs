@@ -51,10 +51,6 @@ namespace Covid19
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -66,7 +62,6 @@ namespace Covid19
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -108,7 +103,7 @@ namespace Covid19
             this.EnterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EnterButton.Image = null;
             this.EnterButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.EnterButton.Location = new System.Drawing.Point(216, 539);
+            this.EnterButton.Location = new System.Drawing.Point(829, 487);
             this.EnterButton.Margin = new System.Windows.Forms.Padding(4);
             this.EnterButton.Name = "EnterButton";
             this.EnterButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -161,7 +156,7 @@ namespace Covid19
             this.groupBox6.Controls.Add(this.radioButton11);
             this.groupBox6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(706, 433);
+            this.groupBox6.Location = new System.Drawing.Point(345, 433);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(360, 74);
             this.groupBox6.TabIndex = 61;
@@ -204,7 +199,7 @@ namespace Covid19
             this.groupBox5.Controls.Add(this.gunaDateTimePicker1);
             this.groupBox5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(378, 433);
+            this.groupBox5.Location = new System.Drawing.Point(17, 433);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(322, 169);
             this.groupBox5.TabIndex = 60;
@@ -285,12 +280,12 @@ namespace Covid19
             this.groupBox4.Controls.Add(this.radioButton9);
             this.groupBox4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(12, 433);
+            this.groupBox4.Location = new System.Drawing.Point(712, 320);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(360, 100);
             this.groupBox4.TabIndex = 59;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Оба ли теста были положительными?";
+            this.groupBox4.Text = "Результат был положительным?";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // radioButton8
@@ -298,7 +293,7 @@ namespace Covid19
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.radioButton8.ForeColor = System.Drawing.Color.White;
-            this.radioButton8.Location = new System.Drawing.Point(178, 55);
+            this.radioButton8.Location = new System.Drawing.Point(179, 44);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(64, 30);
             this.radioButton8.TabIndex = 44;
@@ -312,7 +307,7 @@ namespace Covid19
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.radioButton9.ForeColor = System.Drawing.Color.White;
-            this.radioButton9.Location = new System.Drawing.Point(117, 55);
+            this.radioButton9.Location = new System.Drawing.Point(118, 44);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(55, 30);
             this.radioButton9.TabIndex = 43;
@@ -320,62 +315,6 @@ namespace Covid19
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton2_Click);
             this.radioButton9.Click += new System.EventHandler(this.radioButton2_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.Controls.Add(this.radioButton5);
-            this.groupBox3.Controls.Add(this.radioButton6);
-            this.groupBox3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(706, 320);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(360, 100);
-            this.groupBox3.TabIndex = 58;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Вы делали тест в медецинском учереждении, аптечный или оба?";
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.radioButton7.ForeColor = System.Drawing.Color.White;
-            this.radioButton7.Location = new System.Drawing.Point(213, 64);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(135, 30);
-            this.radioButton7.TabIndex = 43;
-            this.radioButton7.Text = "В больнице";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton2_Click);
-            this.radioButton7.Click += new System.EventHandler(this.radioButton2_Click);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.radioButton5.ForeColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(85, 64);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(122, 30);
-            this.radioButton5.TabIndex = 42;
-            this.radioButton5.Text = "Аптечный";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton2_Click);
-            this.radioButton5.Click += new System.EventHandler(this.radioButton2_Click);
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.radioButton6.ForeColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(14, 64);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(65, 30);
-            this.radioButton6.TabIndex = 41;
-            this.radioButton6.Text = "Оба";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton2_Click);
-            this.radioButton6.Click += new System.EventHandler(this.radioButton2_Click);
             // 
             // groupBox2
             // 
@@ -464,12 +403,12 @@ namespace Covid19
             this.groupBox7.Controls.Add(this.gunaTextBox1);
             this.groupBox7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(706, 513);
+            this.groupBox7.Location = new System.Drawing.Point(345, 513);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(360, 89);
             this.groupBox7.TabIndex = 63;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Напишите сюда название лекарств";
+            this.groupBox7.Text = "Перечислите название лекарств";
             // 
             // AllDataGridView
             // 
@@ -545,7 +484,6 @@ namespace Covid19
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label13);
@@ -564,8 +502,6 @@ namespace Covid19
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -596,10 +532,6 @@ namespace Covid19
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
