@@ -41,6 +41,7 @@ namespace Covid19
             tests.Hide();
             users.Show();
             Stat.Hide();
+            stat2.Hide();
         }
 
         private void Test()
@@ -298,9 +299,37 @@ namespace Covid19
             }
         }
 
-        private void gunaButton3_Click(object sender, EventArgs e)
+        private void Stats2()
         {
+            try
+            {
+                string query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата' , NameVaccine as 'Название', Result as 'Самочувствие' from VaccineDiary join [User] on [User].id=VaccineDiary.ID_user";
 
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView1.DataSource = ds.Tables[0];
+                }
+                query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата от', Date2 as 'Дата до', Medications as 'Лекарства'  from SicknessDiary join [User] on [User].id=SicknessDiary.ID_user";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView2.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void gunaButton3_Click_1(object sender, EventArgs e)
@@ -310,6 +339,7 @@ namespace Covid19
             tests.Hide();
             users.Show();
             Stat.Hide();
+            stat2.Hide();
         }
 
         private void gunaButton4_Click(object sender, EventArgs e)
@@ -319,6 +349,7 @@ namespace Covid19
             tests.Show();
             users.Hide();
             Stat.Hide();
+            stat2.Hide();
         }
 
         private void gunaButton5_Click(object sender, EventArgs e)
@@ -326,6 +357,17 @@ namespace Covid19
             Stats();
             Stat.Location = point;
             Stat.Show();
+            users.Hide();
+            tests.Hide();
+            stat2.Hide();
+        }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+            Stats2();
+            stat2.Location = point;
+            stat2.Show();
+            Stat.Hide();
             users.Hide();
             tests.Hide();
         }
