@@ -42,6 +42,7 @@ namespace Covid19
             users.Show();
             Stat.Hide();
             stat2.Hide();
+            radioButton1.Checked = true;
         }
 
         private void Test()
@@ -370,6 +371,115 @@ namespace Covid19
             Stat.Hide();
             users.Hide();
             tests.Hide();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            Stats2();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата' , NameVaccine as 'Название', Result as 'Самочувствие' from VaccineDiary join [User] on [User].id=VaccineDiary.ID_user where[User].Age between 0 and 18";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView1.DataSource = ds.Tables[0];
+                }
+                query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата от', Date2 as 'Дата до', Medications as 'Лекарства'  from SicknessDiary join [User] on [User].id=SicknessDiary.ID_user where[User].Age between 0 and 18";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView2.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void stat2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата' , NameVaccine as 'Название', Result as 'Самочувствие' from VaccineDiary join [User] on [User].id=VaccineDiary.ID_user where[User].Age between 19 and 35";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView1.DataSource = ds.Tables[0];
+                }
+                query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата от', Date2 as 'Дата до', Medications as 'Лекарства'  from SicknessDiary join [User] on [User].id=SicknessDiary.ID_user where[User].Age between 19 and 35";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView2.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата' , NameVaccine as 'Название', Result as 'Самочувствие' from VaccineDiary join [User] on [User].id=VaccineDiary.ID_user where[User].Age between 36 and 80";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView1.DataSource = ds.Tables[0];
+                }
+                query = $"select [User].Surname as 'Фамилия', [User].Age as 'Возраст', Date1 as 'Дата от', Date2 as 'Дата до', Medications as 'Лекарства'  from SicknessDiary join [User] on [User].id=SicknessDiary.ID_user where[User].Age between 36 and 80";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    ds = new DataSet();
+                    adapter.Fill(ds);
+                    gunaDataGridView2.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
