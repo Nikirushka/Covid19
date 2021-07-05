@@ -46,7 +46,7 @@ namespace Covid19
             }  
             else
             {
-                webBrowser1.Url = new Uri("https://www.google.com/maps/search/карта+мест+вакцинации+рб/@53.8952521,27.5051996,11z");
+                webBrowser1.Url = new Uri("https://www.google.com/maps/search/места+вакцинации+рб/@53.895089,27.504512,11z/data=!3m1!4b1");
                 label2.Text = "Карта пунктов вакцинации в Беларуси";
             }
                
